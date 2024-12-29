@@ -7,7 +7,7 @@
     <style>
         /* Background Image */
         body {
-            font-family: 'Schoolbell', sans-serif;
+            font-family: 'Schoolbell', sans-serif; /* Preserving your font style */
             background-image: url('./background.PNG'); /* Ensure the file is correctly uploaded */
             background-size: cover;
             background-position: center;
@@ -20,6 +20,12 @@
 
         header {
             padding: 20px;
+        }
+
+        .banner {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
         }
 
         .logo {
@@ -118,8 +124,10 @@
 </head>
 <body>
     <!-- Embedded YouTube Video -->
-    <section class="video-container">
+    <section>
         <iframe 
+            width="560" 
+            height="315" 
             src="https://www.youtube.com/embed/RQ3gft06bvE" 
             title="YouTube Video Player" 
             frameborder="0" 
@@ -190,7 +198,7 @@
     <!-- Disclaimer -->
     <section class="disclaimer">
         <h2>Crypto Disclaimer</h2>
-        <p>Cryptocurrencies, including meme tokens like SimpleMan $simple, are speculative investments and can be highly volatile. Please conduct your own research before making any investment decisions. This website and its content do not constitute financial advice. Always invest responsibly and only with funds you can afford to lose.</p>
+        <p>Cryptocurrencies, including meme tokens like SimpleMan $simple, are speculative investments and can be highly volatile. Please conduct your own research before making any investment decisions. This website and its content do not constitute financial advice. Always invest responsibly and only what you can afford to lose.</p>
     </section>
 
     <!-- Footer -->
