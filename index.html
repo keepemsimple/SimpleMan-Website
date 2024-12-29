@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimpleMan $SIMPLE</title>
     <style>
-        /* Importing the Schoolbell font properly */
+        /* Import Schoolbell Font */
         @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 
-        /* Body with Watermark Background */
+        /* Body with Background Image */
         body {
-            font-family: 'Schoolbell', sans-serif; /* Ensuring the font is Schoolbell */
-            background-image: url('./background.png'); /* Correct image path */
+            font-family: 'Schoolbell', sans-serif; /* Ensure the correct font */
+            background-image: url('./background.PNG'); /* Ensure this file exists in the same directory */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -20,7 +20,6 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            opacity: 0.95; /* Subtle watermark effect */
         }
 
         header {
@@ -39,6 +38,11 @@
             display: block;
         }
 
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
         .video-container iframe {
             width: 100%;
             max-width: 560px;
@@ -49,33 +53,30 @@
             margin: 20px;
         }
 
-        .links a, .social-links a {
-            color: #007bff;
+        .links a {
+            color: #000;
             text-decoration: none;
             font-size: 1.2em;
             margin: 0 10px;
         }
 
-        .links a:hover, .social-links a:hover {
+        .links a:hover {
             text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8em;
         }
 
         .about {
             margin: 20px auto;
             max-width: 800px;
             text-align: left;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 8px;
         }
 
         .about h2 {
             text-align: center;
-        }
-
-        .about ul {
-            margin: 0;
-            padding-left: 20px;
         }
 
         .disclaimer {
@@ -86,44 +87,47 @@
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             text-align: left;
-            border-radius: 8px;
         }
 
-        footer {
-            margin-top: 30px;
-            font-size: 0.8em;
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
         }
 
-        /* Button Styling */
-        a.buy-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        a.buy-button:hover {
-            background-color: #0056b3;
-        }
-
-        .video {
+        .video-container iframe {
             width: 100%;
-            max-width: 500px;
-            margin: 20px auto;
+            max-width: 560px;
+            height: 315px;
         }
 
-        @media (max-width: 768px) {
-            .video-container iframe {
-                height: 250px;
-            }
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
 
-            .about, .disclaimer {
-                padding: 15px;
-            }
+        .chart-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .chart-container iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -140,32 +144,29 @@
             allowfullscreen>
         </iframe>
     </section>
-
-    <!-- Header -->
     <header>
         <h1>Welcome to SimpleMan</h1>
-        <p>Ticker: $SIMPLE</p>
+        <p>Ticker: $simple</p>
         <p>Powered by Solana</p>
     </header>
-
-    <!-- Logo -->
     <section>
         <img src="circular_logo.png" alt="SimpleMan Logo" class="logo">
     </section>
-
-    <!-- About Section -->
     <section class="about">
-        <h2>About SimpleMan $SIMPLE</h2>
+        <h2>About SimpleMan $simple</h2>
         <p>This token is all about simplicity. It’s a meme token meant to bring together simple souls and form one big, yet simple community. The goal? To strip away the complexities of life and keep things simple, yet hilariously fun.</p>
+        <p>Simple Man gets it:</p>
         <ul>
             <li>A simple hello can lead to endless possibilities.</li>
             <li>The greatest ideas? They’re usually the simplest.</li>
             <li>Everything is within reach if you believe.</li>
         </ul>
+        <p>Simple Man knows the soul is powerful yet simple. We’re born to be mild. To truly achieve something, you just need to embrace your simple self—because simplicity is the ultimate key.</p>
         <p><b>Keep it $simple.</b></p>
         <hr>
-        <h2>关于 SimpleMan $SIMPLE</h2>
+        <h2>关于 SimpleMan $simple</h2>
         <p>这个代币的核心就是简单。它是一个旨在聚集简单灵魂的表情包代币，形成一个庞大却简单的社区。目标是什么？抛开生活中的复杂性，保持简单，但同时充满乐趣和幽默感。</p>
+        <p>简单人懂得：</p>
         <ul>
             <li>一个简单的问候可以带来无限可能。</li>
             <li>最伟大的想法？通常是最简单的。</li>
@@ -174,41 +175,31 @@
         <p>简单人知道，灵魂是强大的，却又是简单的。我们天生就是平和的。要真正实现目标，你只需要拥抱你简单的自我——因为简单才是最终的关键。</p>
         <p><b>保持$简单</b></p>
     </section>
-
-    <!-- Contract Address and Buy Button -->
     <section>
         <div class="content">
             <p>Ca: AdSrYWvphwVDKbKDaggsga4ho9oqTKUtU8ovL4PQpump</p>
         </div>
         <div style="text-align: center; margin: 20px 0;">
-            <a href="https://pump.fun/coin/AdSrYWvphwVDKbKDaggsga4ho9oqTKUtU8ovL4PQpump" target="_blank" class="buy-button">Buy $SIMPLE</a>
+            <a href="https://pump.fun/coin/AdSrYWvphwVDKbKDaggsga4ho9oqTKUtU8ovL4PQpump" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 1.2em; color: #fff; background-color: #007bff; border: none; border-radius: 5px; text-decoration: none;">Buy $SIMPLE</a>
         </div>
     </section>
-
-    <!-- GIF Video -->
     <section>
         <img src="video.gif" alt="SimpleMan Calling" class="video">
     </section>
-
-    <!-- Community Links -->
     <section class="links">
         <h2>Join Our Community</h2>
-        <a href="https://t.me/simplemanbigdream" target="_blank">Telegram</a>
-        <a href="https://x.com/keepemsimple?s=21" target="_blank">X (Twitter)</a>
+        <a href="https://t.me/simplemanbigdream" target="_blank" style="font-size: 1.2em; color: #007bff; text-decoration: none;">Telegram</a>
+        <a href="https://x.com/keepemsimple?s=21" target="_blank" style="font-size: 1.2em; color: #007bff; text-decoration: none;">X (Twitter)</a>
         <div class="social-links">
             <a href="https://youtube.com/@keepemsimple" target="_blank">YouTube</a>
         </div>
     </section>
-
-    <!-- Disclaimer -->
     <section class="disclaimer">
         <h2>Crypto Disclaimer</h2>
         <p>Cryptocurrencies, including meme tokens like SimpleMan $simple, are speculative investments and can be highly volatile. Please conduct your own research before making any investment decisions. This website and its content do not constitute financial advice. Always invest responsibly and only what you can afford to lose.</p>
     </section>
-
-    <!-- Footer -->
     <footer>
-        &copy; 2024 SimpleMan $SIMPLE. All rights reserved. Keep it $simple.
+        &copy; 2024 SimpleMan $simple. All rights reserved. Keep it $simple.
     </footer>
 </body>
 </html>
