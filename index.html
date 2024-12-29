@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimpleMan $SIMPLE</title>
     <style>
-        /* Background Image with Watermark Effect */
+        /* Importing the Schoolbell font properly */
+        @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+        /* Body with Watermark Background */
         body {
-            font-family: 'Schoolbell', sans-serif; /* Ensured correct font style */
-            background-image: url('./EA6DD9C2-4A4F-430C-82A6-EEA28FAF04EB.png'); /* Updated to use the uploaded image */
+            font-family: 'Schoolbell', sans-serif; /* Ensuring the font is Schoolbell */
+            background-image: url('./EA6DD9C2-4A4F-430C-82A6-EEA28FAF04EB.png'); /* Correct image path */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            opacity: 0.8; /* Watermark effect */
             color: #000;
             margin: 0;
             padding: 0;
             text-align: center;
+            opacity: 0.95; /* Subtle watermark effect */
         }
 
         header {
