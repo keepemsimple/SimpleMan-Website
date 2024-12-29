@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimpleMan $SIMPLE</title>
     <style>
-        /* Body styles */
+        /* Background Image */
         body {
-            font-family: 'Arial', sans-serif;
-            background-image: url('./background.PNG'); /* Ensure this file is correctly uploaded */
+            font-family: 'Schoolbell', sans-serif;
+            background-image: url('./background.PNG'); /* Ensure the file is correctly uploaded */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -25,23 +25,13 @@
         .logo {
             width: 150px;
             margin: 20px auto;
+            display: block;
         }
 
         .video-container iframe {
             width: 100%;
             max-width: 560px;
             height: 315px;
-        }
-
-        .content {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .chart-container iframe {
-            width: 100%;
-            max-width: 600px;
-            height: 400px;
         }
 
         .links {
@@ -59,11 +49,6 @@
             text-decoration: underline;
         }
 
-        footer {
-            margin-top: 30px;
-            font-size: 0.8em;
-        }
-
         .about {
             margin: 20px auto;
             max-width: 800px;
@@ -77,6 +62,11 @@
             text-align: center;
         }
 
+        .about ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
         .disclaimer {
             margin: 30px auto;
             padding: 20px;
@@ -86,6 +76,11 @@
             border: 1px solid #ddd;
             text-align: left;
             border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8em;
         }
 
         /* Button Styling */
@@ -104,38 +99,25 @@
             background-color: #0056b3;
         }
 
-        .social-links {
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #007bff;
-        }
-
-        .social-links a:hover {
-            text-decoration: underline;
-        }
-
         .video {
             width: 100%;
             max-width: 500px;
             margin: 20px auto;
         }
+
+        @media (max-width: 768px) {
+            .video-container iframe {
+                height: 250px;
+            }
+
+            .about, .disclaimer {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to SimpleMan</h1>
-        <p>Ticker: $SIMPLE</p>
-        <p>Powered by Solana</p>
-    </header>
-
-    <section>
-        <img src="circular_logo.png" alt="SimpleMan Logo" class="logo">
-    </section>
-
+    <!-- Embedded YouTube Video -->
     <section class="video-container">
         <iframe 
             src="https://www.youtube.com/embed/RQ3gft06bvE" 
@@ -146,6 +128,19 @@
         </iframe>
     </section>
 
+    <!-- Header -->
+    <header>
+        <h1>Welcome to SimpleMan</h1>
+        <p>Ticker: $SIMPLE</p>
+        <p>Powered by Solana</p>
+    </header>
+
+    <!-- Logo -->
+    <section>
+        <img src="circular_logo.png" alt="SimpleMan Logo" class="logo">
+    </section>
+
+    <!-- About Section -->
     <section class="about">
         <h2>About SimpleMan $SIMPLE</h2>
         <p>This token is all about simplicity. It’s a meme token meant to bring together simple souls and form one big, yet simple community. The goal? To strip away the complexities of life and keep things simple, yet hilariously fun.</p>
@@ -157,9 +152,17 @@
         <p><b>Keep it $simple.</b></p>
         <hr>
         <h2>关于 SimpleMan $SIMPLE</h2>
-        <p>这个代币的核心就是简单...</p>
+        <p>这个代币的核心就是简单。它是一个旨在聚集简单灵魂的表情包代币，形成一个庞大却简单的社区。目标是什么？抛开生活中的复杂性，保持简单，但同时充满乐趣和幽默感。</p>
+        <ul>
+            <li>一个简单的问候可以带来无限可能。</li>
+            <li>最伟大的想法？通常是最简单的。</li>
+            <li>如果你相信，一切皆有可能。</li>
+        </ul>
+        <p>简单人知道，灵魂是强大的，却又是简单的。我们天生就是平和的。要真正实现目标，你只需要拥抱你简单的自我——因为简单才是最终的关键。</p>
+        <p><b>保持$简单</b></p>
     </section>
 
+    <!-- Contract Address and Buy Button -->
     <section>
         <div class="content">
             <p>Ca: AdSrYWvphwVDKbKDaggsga4ho9oqTKUtU8ovL4PQpump</p>
@@ -169,6 +172,12 @@
         </div>
     </section>
 
+    <!-- GIF Video -->
+    <section>
+        <img src="video.gif" alt="SimpleMan Calling" class="video">
+    </section>
+
+    <!-- Community Links -->
     <section class="links">
         <h2>Join Our Community</h2>
         <a href="https://t.me/simplemanbigdream" target="_blank">Telegram</a>
@@ -178,13 +187,15 @@
         </div>
     </section>
 
+    <!-- Disclaimer -->
     <section class="disclaimer">
         <h2>Crypto Disclaimer</h2>
-        <p>Cryptocurrencies, including meme tokens like SimpleMan $simple...</p>
+        <p>Cryptocurrencies, including meme tokens like SimpleMan $simple, are speculative investments and can be highly volatile. Please conduct your own research before making any investment decisions. This website and its content do not constitute financial advice. Always invest responsibly and only with funds you can afford to lose.</p>
     </section>
 
+    <!-- Footer -->
     <footer>
-        &copy; 2024 SimpleMan | SIMPLE. All rights reserved. Keep it $simple.
+        &copy; 2024 SimpleMan $SIMPLE. All rights reserved. Keep it $simple.
     </footer>
 </body>
 </html>
