@@ -10,7 +10,7 @@
 
         /* Body with Background Image */
         body {
-            font-family: 'Schoolbell', sans-serif; /* Ensuring the correct font */
+            font-family: 'Schoolbell', sans-serif; /* Correct font */
             background-image: url('./background.PNG'); /* Background image */
             background-size: cover;
             background-position: center;
@@ -24,12 +24,6 @@
 
         header {
             padding: 20px;
-        }
-
-        .banner {
-            width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
         }
 
         .logo {
@@ -49,7 +43,7 @@
         }
 
         .links a {
-            color: #000;
+            color: #007bff;
             text-decoration: none;
             font-size: 1.2em;
             margin: 0 10px;
@@ -75,13 +69,10 @@
         }
 
         .disclaimer {
-            margin: 30px auto;
             padding: 20px;
-            max-width: 800px;
-            font-size: 0.9em;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            text-align: left;
+            font-size: 1em;
+            color: rgba(255, 255, 255, 0.9); /* Transparent text on wallpaper */
+            text-align: center;
         }
 
         .video-container {
@@ -123,6 +114,29 @@
 
         .social-links a:hover {
             text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                font-size: 1em;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .logo {
+                width: 120px;
+            }
+
+            .disclaimer {
+                font-size: 0.9em;
+            }
+
+            footer {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
