@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glitching Background</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
+     
+        .glitch-layer {
+            position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url('./background.PNG'); /* Ensure the file is in the same directory as index.html */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            animation: glitch 3s infinite;
+            background-image: inherit;
+            background-size: inherit;
+            background-position: inherit;
+            background-repeat: inherit;
+            mix-blend-mode: difference;
+            opacity: 0.7;
+            animation: glitch 2s infinite ease-in-out;
         }
 
+        /* Keyframes for glitching */
         @keyframes glitch {
             0% {
-                transform: translate(0, 0);
                 clip-path: inset(0 0 0 0);
-            }
-            10% {
-                transform: translate(-5px, 5px);
-                clip-path: inset(20% 0 40% 0);
+                transform: translate(0);
             }
             20% {
-                transform: translate(5px, -5px);
-                clip-path: inset(0 20% 30% 0);
-            }
-            30% {
-                transform: translate(-10px, 10px);
-                clip-path: inset(10% 0 0 10%);
+                clip-path: inset(10% 0 30% 0);
+                transform: translate(-5px, 5px);
             }
             40% {
-                transform: translate(10px, -10px);
-                clip-path: inset(0 10% 20% 0);
+                clip-path: inset(30% 0 20% 0);
+                transform: translate(5px, -5px);
             }
-            50% {
-                transform: translate(0, 0);
+            60% {
+                clip-path: inset(0 10% 10% 0);
+                transform: translate(-10px, 10px);
+            }
+            80% {
+                clip-path: inset(10% 0 10% 0);
+                transform: translate(5px, -5px);
+            }
+            100% {
                 clip-path: inset(0 0 0 0);
+                transform: translate(0);
             }
         }
     </style>
+</head>
+<body>
+    <!-- Background with glitch effect -->
+    <div class="background">
+        <div class="glitch-layer"></div>
+        <div class="glitch-layer"></div>
+        <div class="glitch-layer"></div>
+    </div>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
